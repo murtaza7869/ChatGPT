@@ -1,4 +1,4 @@
-$filename = $arg[0]
+$filename = $args[0]
 
 # Search for the file
 $file = Get-ChildItem -Path "C:\" -recurse -Filter $filename -ErrorAction  SilentlyContinue
