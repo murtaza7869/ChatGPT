@@ -1,5 +1,4 @@
-$filename = $args[0]
-
+$filename = ConvertFrom-StringData -StringData $args[0]
 # Search for the file
 $file = Get-ChildItem -Path "C:\" -recurse -Filter $filename -ErrorAction  SilentlyContinue
 
